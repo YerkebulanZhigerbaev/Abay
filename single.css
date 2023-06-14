@@ -1,0 +1,45 @@
+.audiojs audio { position: absolute; left: -1px; }
+.audiojs { width: 800px; height: 50px; background: none; overflow: hidden; font-family: monospace; font-size: 12px;
+    -webkit-box-shadow: 1px 1px 8px #FFF; -moz-box-shadow: 1px 1px 8px #FFF;
+    -o-box-shadow: 1px 1px 8px #FFF; box-shadow: 1px 1px 8px #FFF; }
+.audiojs .play-pause { width: 60px; height: 200px; padding: 4px 6px; margin: 0px; float: left; overflow: hidden; border-right: 1px solid #FFF; }
+.audiojs p { display: none; width: 48px; height: 48px; margin: 0px; cursor: pointer; }
+.audiojs .play { display: block; }
+.audiojs .scrubber { position: relative; float: left; width: 480px; background: #FFF; height: 14px; margin: 10px; margin-top: 20px; border-left: 0px; border-bottom: 0px; overflow: hidden; }
+.audiojs .progress { position: absolute; top: 0px; left: 0px; height: 14px; width: 0px; background: #FFF; z-index: 1; }
+.audiojs .loaded { position: absolute; top: 0px; left: 0px; height: 14px; width: 0px; background: #F0AD4E; }
+.audiojs .time { float: left; height: 50px; line-height: 50px; margin: 0px 0px 0px 6px; padding: 0px 6px 0px 12px; border-left: 1px solid #FFF; color: #428BCA; }
+.audiojs .time em { padding: 0px 2px 0px 0px; color: #428BCA; font-style: normal; }
+.audiojs .time strong { padding: 0px 0px 0px 2px; font-weight: normal; }
+.audiojs .error-message { float: left; display: none; margin: 0px 10px; height: 36px; width: 400px; overflow: hidden; line-height: 36px; white-space: nowrap; color: #fff;
+        text-overflow: ellipsis; -o-text-overflow: ellipsis; -icab-text-overflow: ellipsis; -khtml-text-overflow: ellipsis; -moz-text-overflow: ellipsis; -webkit-text-overflow: ellipsis; }
+.audiojs .error-message a { color: #eee; text-decoration: none; padding-bottom: 1px; border-bottom: 1px solid #999; white-space: wrap; }
+.audiojs .play { background: url('/images/play_small.png') no-repeat; }
+.audiojs .pause { background: url('/images/stop_small.png'); }
+.playing .play, .playing .loading, .playing .error { display: none; }
+.playing .pause { display: block; }
+.loading .play, .loading .pause, .loading .error { display: none; }
+.loading .loading { display: block; }
+.error .time, .error .play, .error .pause, .error .scrubber, .error .loading { display: none; }
+.error .error { display: block; }
+.error .play-pause p { cursor: auto; }
+.error .error-message { display: block; }
+.choice{
+    background: none;
+    background-color: #FFFACD;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+select, #wrapper{
+    display: none;
+}
+#upperText{
+    margin-top: 10px;
+}
+p{
+    text-align: justify;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    line-height: 1.5;
+}
+      
